@@ -1,0 +1,261 @@
+*{
+    font-family: 'enter';
+}
+:root{
+    --primary-color : #ced4da;
+    --secondary-color : #e9ecef;
+}
+/* Section Header */
+.section__header .navBar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 25px;
+    box-shadow: 1px 5px 7px #ccc;
+}
+.section__header .navBar .logo{
+    user-select: none;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: italic;
+    border-bottom: 1px solid #000;
+}
+.section__header .navBar .linksNavBar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.section__header .navBar .InputSearch{
+    border-radius: 5px;
+    padding: 2px 10px;
+    margin-right: 4rem;
+    background-color: #cccccc62;
+    box-shadow: 1px 4px 6px #ccc;
+}
+.section__header .navBar .InputSearch span {
+    color: #929292;
+}
+.section__header .navBar .InputSearch input {
+    border: none;
+    outline: none;
+    margin-left: 5px;
+    color: #929292;
+}
+.section__header .navBar .linksNavBar li a {
+    color: #000000a1;
+    font-weight: 400;
+    font-size: large;
+}
+.section__header .navBar .linksNavBar li a:hover{
+    border-bottom: 1px solid #000;
+    color: #000;
+}
+.linksNavBar .IconUser,
+.linksNavBar .IconShop {
+    background-color: var(--secondary-color);
+    padding: 3px 7px;
+    border-radius: 50px;
+    box-shadow: 1px 4px 6px #ccc;
+}
+.linksNavBar .IconUser:hover,
+.linksNavBar .IconShop:hover{
+    background-color: var(--primary-color);
+} 
+.linksNavBar .IconUser a i, 
+.linksNavBar .IconShop a i{
+    color: white;
+}
+.linksNavBar .IconUser a:hover, 
+.linksNavBar .IconShop a:hover{
+    border: none !important;
+}
+/* NavBar Mobile */
+.navBar__mobile{
+    padding: 8px 10px;
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.navBar__mobile .logo__mobile{
+    user-select: none;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: italic;
+    text-shadow: -1px 1px 15px #000;
+    position: relative;
+}
+.navBar__mobile .linksNavBar__mobile{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px 0;
+    background-color: var(--secondary-color);
+    border-radius: 24px;
+    padding: 65px 35px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.navBar__mobile .linksNavBar__mobile a {
+    background-color: #71717173;
+    padding: 10px 24px;
+    border-radius: 18px;
+    color: white;
+}
+.navBar__mobile .linksNavBar__mobile a:hover{
+    background-color: #71717188;
+}
+.navBar__mobile .linksNavBar__mobile .InputSearch{
+    border-radius: 5px;
+    padding: 2px 10px;
+    background-color: #cccccc62;
+    box-shadow: 1px 4px 6px #ccc;
+    width: 35px;
+    display: flex;
+    overflow: hidden;
+}
+.navBar__mobile .linksNavBar__mobile .InputSearch:hover{
+    width: 200px;
+    transition: all .6s linear;
+}
+.navBar__mobile .linksNavBar__mobile .InputSearch span {
+    color: #929292;
+}
+.navBar__mobile .linksNavBar__mobile .InputSearch input {
+    border: none;
+    outline: none;
+    color: #929292;
+    margin-left: 12px;
+}
+.IconClosed{
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+}
+.IconMenu{
+    font-size: 25px;
+    margin-top: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.IconClosed:hover{
+    animation: IconClosed 3s ease-in-out both;
+}
+@keyframes IconClosed {
+    100%{
+        rotate: 360deg;
+        color: rgb(255, 255, 255);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Madia Screen */
+@media (max-width : 768px) {
+    .section__header .navBar{
+        display: none;
+    }
+    .navBar__mobile{
+        display: flex;
+    }
+}
