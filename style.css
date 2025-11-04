@@ -197,46 +197,244 @@
     color: var(--primary-color);
     width: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ========== */
+/* === Main ===*/
+/* ==== Section Category ==== */
+/* ========== */
+.section__category {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+.section__category .article__category h1{
+    font-size: 35px;
+    font-weight: 600;
+    position: relative;
+    width: fit-content;
+    padding-left: 50px;
+}
+.section__category .article__category h1::after{
+    content: '';
+    width: 80px;
+    height: 5px;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 5px;
+}
+.section__category .content__Category{
+    margin-top: 3rem;
+    padding: 0 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px 25px;
+}
+.content__Category .type__Category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--secondary-color);
+    padding: 25px 50px;
+    border-radius: 25px;
+    transform: translateY(10px);
+    transition: all .4s linear;
+    box-shadow: 2px 4px 7.5px var(--primary-color);
+}
+.content__Category .type__Category:hover{
+    transform: translateY(-15px);
+    box-shadow: 4px 8px 15px var(--primary-color);
+}
+.content__Category .type__Category h5{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+/* Section Product */
+.section__product{
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+}
+.section__product .Div__buttons{
+    padding-left: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.section__product .Div__buttons button {
+    font-weight: 600;
+    font-family: Arial, Helvetica;
+    font-size: 20px;
+    cursor: pointer;
+}
+.active{
+    border-radius: 2px;
+    text-shadow: 2px 2px 10px #030303;
+}
+.productAll .DivSectionProduct{
+    margin-top: 2rem;
+    padding: 0 50px;
+}
+.DivSectionProduct .products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    border-radius: 24px;
+    padding: 24px;
+    background-color: var(--secondary-color);
+}
+.DivSectionProduct .products .cartProduct{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px 25px;
+    transition: all .3s linear;
+}
+.DivSectionProduct .products .cartProduct:hover{
+    transform: translateY(-15px);
+}
+.products .cartProduct :is(span, h5){
+    padding: 5px;
+    font-size: 22px;
+    font-weight: 600;
+}
+.products .cartProduct p{
+    padding: 7px;
+}
+.products .cartProduct button{
+    background-color: #000;
+    color: white;
+    padding: 3px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+.products .cartProduct:hover button{
+    box-shadow: 2px 4px 8px #ccc;
+}
+/* Section Discounts */
+.sectionDiscounts {
+    margin-top: 5rem;
+    padding: 0 50px;
+}
+.DivProductDiscount .handleDiscount{
+    font-size: 35px;
+    font-weight: 600;
+    position: relative;
+    width: fit-content;
+    padding-left: 50px;
+}
+.DivProductDiscount .handleDiscount::after{
+    content: '';
+    width: 100px;
+    height: 5px;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 5px;
+}
+.DivProductDiscount .content__DiscountProducts{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    border-radius: 25px;
+    padding: 25px;
+    background-color: var(--secondary-color);
+}
+.content__DiscountProducts .cartProduct{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 25px;
+    padding: 10px 25px;
+    transition: all .4s linear;
+}
+.content__DiscountProducts .cartProduct:hover{
+    transform: translateY(-10px);
+}
+.content__DiscountProducts .cartProduct :is(span, h5) {
+    padding: 5px;
+    font-size: 22px;
+    font-weight: 600;
+}
+.content__DiscountProducts .cartProduct p {
+    padding: 7px;
+}
+.content__DiscountProducts .cartProduct button{
+    border: 1px solid #ededed;
+    color: #000;
+    padding: 3px 25px;
+    border-radius: 6px;
+    transition: all .4s linear;
+}
+.content__DiscountProducts .cartProduct:hover button{
+    background-color: #000;
+    color: white;
+}
+/* Section Footer */
+.footer {
+    margin-top: 3rem;
+    padding: 20px 35px;
+    background-image: linear-gradient(
+                20deg, #cccccc76, #fff);
+    border-top: 1px solid #ccc;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+.footer .Div__footer {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+.Div__footer .logo {
+    user-select: none;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+.Div__footer .contact__us h5 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+.Div__footer .contact__us .cartContact {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+    padding-left: 1.6rem;
+}
+.Div__footer .CustomerServices h5 {
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    border-bottom: #000 solid 1px;
+    width: fit-content;
+}
+.CustomerServices .LinkCustomerServices ul li {
+    padding-bottom: 10px;
+    color: #0000008f;
+    padding-left: 7px;
+}
+.CustomerServices .LinkCustomerServices ul li:hover{
+    color: #000;
+}
 
 
 
@@ -322,6 +520,45 @@
     }
     .Div__HeroSection .content__div h1 {
         line-height: 4rem;
-        /* font-size: 2rem; */
+    }
+}
+@media (max-width : 450px) {
+    .section__category .article__category h1,
+    .DivProductDiscount .handleDiscount {
+        font-size: 26px;
+        padding-left: 20px;
+    }
+    .section__category .article__category h1::after,
+    .DivProductDiscount .handleDiscount::after {
+        width: 60px;
+    }
+    .productAll .DivSectionProduct,
+    .sectionDiscounts {
+        margin-top: 1rem;
+        padding: 0 20px;
+    }
+}
+@media (max-width : 420px) {
+    .HeroSection {
+        height: 580px;
+    }
+    .Div__HeroSection img{
+        width: 230px;
+    }
+    .image__2{
+        width: 300px !important;
+    }
+}
+@media (max-width : 330px) {
+    .HeroSection {
+        height: 400px;
+    }
+    .Div__HeroSection{
+        color: white;
+    }
+    .Div__HeroSection img {
+        width: 300px;
+        margin-top: -22rem;
+        z-index: -1111;
     }
 }
