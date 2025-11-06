@@ -21,23 +21,3 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
     },
 });
-
-// Section Product
-const NewArrival = document.getElementById('NewArrival');
-const Bestseller = document.getElementById('Bestseller');
-const FeaturedProducts = document.getElementById('FeaturedProducts');
-NewArrival.addEventListener('click', () => {
-    NewArrival.classList.add('active');
-    Bestseller.classList.remove('active');
-    FeaturedProducts.classList.remove('active');
-});
-Bestseller.addEventListener('click', () => {
-    NewArrival.classList.remove('active');
-    Bestseller.classList.add('active');
-    FeaturedProducts.classList.remove('active');
-});
-FeaturedProducts.addEventListener('click', () => {
-    NewArrival.classList.remove('active');
-    Bestseller.classList.remove('active');
-    FeaturedProducts.classList.add('active');
-});
