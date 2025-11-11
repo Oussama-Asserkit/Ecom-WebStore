@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecom Web | OUSSAMA ASSERKIT</title>
+    <!-- Link Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <!-- Link TailwindCss -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Link Icon Remix -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!-- Link Css -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="image/Iphone 14 pro 1.png" type="image">
+</head>
+<body>
+    <!-- Header -->
+    <header class="section__header">
+        <!-- navBar DeskTop -->
+        <nav class="navBar">
+            <h4 class="logo">OUSSAMA TECH</h4>
+            <ul class="linksNavBar">
+                <li class="InputSearch">
+                    <span>
+                        <i class="ri-search-line"></i>
+                    </span>
+                    <input placeholder="Search Product" type="text">
+                </li>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../FileShop/Shop.html">Shop</a>
+                </li>
+                <li>
+                    <a href="#">Category</a>
+                </li>
+                <li>
+                    <a href="#">Contact us</a>
+                </li>
+                <li class="IconUser">
+                    <a href="../UserLogin/login.html"><i class="ri-user-line"></i></a>
+                </li>
+                <li class="IconShop">
+                    <a href="#">
+                        <i class="ri-shopping-cart-2-line"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- navBar Mobile -->
+        <nav class="navBar__mobile">
+            <h4 class="logo__mobile">OUSSAMA TECH</h4>
+            <span class="IconMenu" id="IconMenu">
+                <i class="ri-menu-line"></i>
+            </span>
+            <ul class="linksNavBar__mobile">
+                <span id="IconClosed" class="IconClosed">
+                    <i class="ri-close-line"></i>
+                </span>
+                <li class="InputSearch">
+                    <span>
+                        <i class="ri-search-line"></i>
+                    </span>
+                    <input placeholder="Search Product" type="text">
+                </li>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">Shop</a>
+                </li>
+                <li>
+                    <a href="#">Category</a>
+                </li>
+                <li>
+                    <a href="../Contact Us/ContactUs.html">Contact us</a>
+                </li>
+                <li class="IconUser">
+                    <a href="../UserLogin/login.html"><i class="ri-user-line"></i></a>
+                </li>
+                <li class="IconShop">
+                    <a href="#">
+                        <i class="ri-shopping-cart-2-line"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- main -->
+    <main>
+        <!-- section contact us -->
+        <section class="sectionContactUs mt-30 mb-45 px-7">
+            <div class="Div__contactus flex justify-evenly items-center gap-10 flex-wrap">
+                <div>
+                    <h1 class="text-5xl font-mono font-bold">Contact Us</h1>
+                    <div class="mt-5 ml-4">
+                        <p class="flex flex-row gap-4 items-center text-xl py-4 max-[400px]:text-sm">
+                            <i class="ri-mail-line text-xl max-[400px]:text-sm"></i>
+                            OUSSAMATECH@gmail.com
+                        </p>
+                        <p class="flex flex-row gap-4 items-center text-xl py-4 max-[400px]:text-sm">
+                            <i class="ri-map-pin-line text-xl max-[400px]:text-sm"></i>
+                            4074-Ebert-Summit-Suite 375 <br>
+                            Lake-Leonardchester
+                        </p>
+                        <p class="flex flex-row gap-4 items-center text-xl py-4 max-[400px]:text-sm">
+                            <i class="ri-phone-line text-xl max-[400px]:text-sm"></i>
+                            +2126-219-632-61
+                        </p>
+                    </div>
+                </div>
+                <div class="divFrom">
+                    <form class="">
+                        <div class="mb-5 max-[517px]:w-85 max-[400px]:w-65 w-md">
+                            <label for="name" class="block mb-2 text-sm font-medium">Your Name</label>
+                            <input type="text" id="name" class="shadow-xl bg-gray-200 border border-gray-300 
+                            text-sm rounded-lg outline-none block w-full p-2.5" placeholder="Name"/>
+                        </div>
+                        <div class="mb-5 max-[517px]:w-85 max-[400px]:w-65 w-md">
+                            <label for="email" class="block mb-2 text-sm font-medium">Your Email</label>
+                            <input type="email" id="email" class="shadow-xl bg-gray-200 border border-gray-300
+                            text-sm rounded-lg outline-none block w-full p-2.5" placeholder="Email"/>
+                        </div>
+                        <div class="mb-5 max-[517px]:w-85 max-[400px]:w-65 w-md">
+                            <label for="message" class="block mb-2 text-sm font-medium">Your message</label>
+                            <textarea id="message" rows="4" class="shadow-xl bg-gray-200 border border-gray-300
+                            text-sm rounded-lg outline-none block w-full p-2.5" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 font-medium 
+                        rounded-lg text-sm px-5 py-2.5 text-center w-md max-[517px]:w-85 max-[400px]:w-65">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Sectio Footer -->
+    <footer class="footer">
+        <div class="Div__footer">
+            <div class="contact__us">
+                <h1 class="logo">OUSSAMA TECH</h1>
+                <h5>Contact Us</h5>
+                <div class="cartContact">
+                    <span>
+                        <i class="ri-whatsapp-line"></i>
+                    </span>
+                    <div>
+                        <p>Whats App</p>
+                        <p>+2126-219-632-61</p>
+                    </div>
+                </div>
+                <div class="cartContact">
+                    <span>
+                        <i class="ri-phone-line"></i>
+                    </span>
+                    <div>
+                        <p>Call Us</p>
+                        <p>+2126-219-632-61</p>
+                    </div>
+                </div>
+            </div>
+            <div class="CustomerServices">
+                <h5>Customer Services</h5>
+                <div class="LinkCustomerServices">
+                    <ul>
+                        <a href="#">
+                            <li>About Us</li>
+                        </a>
+                        <a href="#">
+                            <li>Terms &amp; Conditions</li>
+                        </a>
+                        <a href="#">
+                            <li>FAQ</li>
+                        </a>
+                        <a href="#">
+                            <li>Privacy Policy</li>
+                        </a>
+                        <a href="#">
+                            <li>E-waste Policy</li>
+                        </a>
+                        <a href="#">
+                            <li>Cancellation &amp; Return Policy</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Script Js -->
+    <script src="Contactus.js"></script>
+</body>
+</html>

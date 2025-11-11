@@ -755,3 +755,138 @@
     background-color: #000;
     color: white;
 }
+/* ============ */
+/* File Card */
+/* ============ */
+.SectionCard{
+    padding: 6rem 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    background-color: #efefef45;
+}
+.SectionCard .PropImage img{
+    width: 380px;
+    border: #000 solid 2px;
+    background-color: white;
+    padding: 25px 0;
+    border-radius: 17px;
+}
+.SectionCard .ContentCard .Div__one{
+    margin-top: -2rem;
+}
+.SectionCard .ContentCard .Div__one h1{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.SectionCard .ContentCard .Div__one .PriceAndRev{
+    margin-top: 10px;
+    margin-left: .5rem;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+.SectionCard .ContentCard .Div__one .PriceAndRev .price{
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.SectionCard .ContentCard .Div__one .PriceAndRev .rev{
+    color: rgb(255, 115, 0);
+}
+.SectionCard .ContentCard .Div__tow{
+    margin-top: 1.5rem;
+    margin-left: .5rem;
+}
+.SectionCard .ContentCard .Div__tow ul{
+    padding-left: 1.5rem;
+    margin-top: .7rem;
+    list-style-type: square;
+}
+.SectionCard .ContentCard .Div__Three{
+    margin-top: 2.5rem;
+    margin-left: .5rem;
+}
+.SectionCard .ContentCard .Div__Three .Div__cunterAndAdd{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 24px;
+}
+.Div__Three .Div__cunterAndAdd .Div__1{
+    background-color: #0000002e;
+    color: white;
+    border-radius: 10px;
+}
+.Div__Three .Div__cunterAndAdd .Div__1 button{
+    background-color: #000000a6;
+    padding: 3px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.Div__Three .Div__cunterAndAdd .Div__1 button:hover{
+    background-color: #000;
+}
+.Div__Three .Div__cunterAndAdd .Div__1 span{
+    background-color: #0000002e;
+    padding: 3px 20px;
+    border-radius: 5px;
+}
+.Div__Three .Div__cunterAndAdd .Div__2 button{
+    background-color: #000000a6;
+    color: white;
+    padding: 3px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.Div__Three .Div__cunterAndAdd .Div__2 button:hover{
+    background-color: #000;
+}
+.Div__Three .Div__BuyNow{
+    padding: 4px 0;
+    margin-top: 1rem;
+    width: 100%;
+}
+.Div__Three .Div__BuyNow{
+    width: 100%;
+    background-color: #000000a6;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.Div__Three .Div__BuyNow:hover{
+    background-color: #000;
+}
+@media (max-width : 768px) {
+    .SectionCard .PropImage img{
+        width: 300px;
+    }
+    .SectionCard .ContentCard .Div__one{
+        margin-top: 0;
+    }
+}
+@media (max-width : 550px) {
+    .SectionCard{
+        padding: 3rem 24px;
+        row-gap: 2rem;
+    }
+}
+@media (max-width : 390px){
+    .SectionCard .PropImage img{
+        width: 250px;
+    }
+    .SectionCard .ContentCard .Div__one h1{
+        font-size: 18px;
+    }
+    .SectionCard .ContentCard .Div__one .PriceAndRev .price{
+        font-size: 20px;
+    }
+    .SectionCard .ContentCard .Div__Three .Div__cunterAndAdd{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
