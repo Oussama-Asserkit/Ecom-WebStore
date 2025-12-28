@@ -1,0 +1,45 @@
+[
+    {
+        "id": 0,
+        "image": "productId1.png",
+        "title": "Solid baseball cap",
+        "description": "Black Casual Collar, Simple Denim Baseball Cap",
+        "price": 35,
+        "old_price": 45,
+        "category": "Featured Products"
+    },
+    {
+        "id":1,
+        "image": "productId2.png",
+        "title": "Cotton Baseball Cap",
+        "description": "Classic Cotton Adjustable Low Crown Cotton Baseball Cap",
+        "price": 17,
+        "category": "Featured Products"
+    },{
+        "image": "productId3.png",
+        "title": "Solid Baseball Cap",
+        "description": "New stylish sanp back baseball caps for men",
+        "price": 16.99,
+        "category": "Featured Products"
+    },{
+        "image": "productId4.png",
+        "title": "Minimalist Baseball Cap",
+        "description": "Casual Polyester Plain Baseball Cap Spring/Fall",
+        "price": 10.10,
+        "old_price": 11.20,
+        "category": "Featured Products"
+    },{
+        "image": "productId5.png",
+        "title": "solid color baseball cap",
+        "description": "Casual Collar Plain Fabric Baseball Cap Embellished Spring/Summer",
+        "price": 23.50,
+        "old_price": 30.34,
+        "category": "Featured Products"
+    },{
+        "image": "productId6.png",
+        "title": "Retro Baseball Cap",
+        "description": "Klasik Polyester Plain Baseball Cap Spring/Fall Men Accessories",
+        "price": 15.65,
+        "category": "Featured Products"
+    }
+]
